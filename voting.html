@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secondary School Learners Government in City of Malolos Integrated School - Sto. Rosario</title>
+    <link rel="stylesheet" href="voting.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.jpg" alt="School Logo" class="logo">
+        <h1><i class="fas fa-vote-yea"></i> Secondary School Learners Government in City of Malolos Integrated School - Sto. Rosario</h1>
+        <form id="loginForm">
+            <input type="text" id="lrn" placeholder="LRN" required>
+            <input type="text" id="name" placeholder="Name" required>
+            <select id="grade" required>
+                <option value="">Select Grade</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <input type="text" id="section" placeholder="Section" required>
+            <select id="strand" style="display:none;">
+                <option value="">Select Strand</option>
+                <option value="HUMMS">HUMMS</option>
+                <option value="STEM">STEM</option>
+                <option value="SPORTS">SPORTS</option>
+                <option value="ABM">ABM</option>
+                <option value="TVL">TVL</option>
+            </select>
+            <select id="tvlSub" style="display:none;">
+                <option value="">Select TVL Option</option>
+                <option value="ICT">ICT</option>
+                <option value="HE">HE</option>
+            </select>
+            <button type="submit"><i class="fas fa-sign-in-alt"></i> Login & Proceed to Vote</button>
+        </form>
+        <div id="votingSection" style="display:none;">
+            <h2><i class="fas fa-ballot-box"></i> Vote for Candidates</h2>
+            <div id="voteProgress" class="progress-indicator">
+                Select candidates for all positions to vote!
+            </div>
+            <div id="candidates"></div>
+            <button id="voteBtn" disabled><i class="fas fa-paper-plane"></i> Submit All Votes</button>
+            <div id="results"></div>
+        </div>
+    </div>
+    <footer>
+        <p>
+            &copy; All rights reserved and made for only CMIS Sto Rosario Students.
+        </p>
+    </footer>
+    <script src="voting.js"></script>
+</body>
+</html>
